@@ -26,7 +26,7 @@ def inicio():
         cur.close()
         conn.close()
 
-        return f"<h1>¡Hola DevOps!</h1><p>Esta página se conecta a PostgreSQL.</p><p>Total de visitas registradas en la base de datos: <b>{total_visitas[0]}</b></p>"
+        return f"<h1>¡Hola DevOps!</h1><p>Esta página se conecta a PostgreSQL.</p><p>Total de visitas registradas en la base de datos: <b>{total_visitas}</b></p>"
     except Exception as e:
         return f"<h1>Error de conexión</h1><p>{str(e)}</p>"
 
